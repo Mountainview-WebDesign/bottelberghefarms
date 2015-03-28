@@ -1,0 +1,73 @@
+/*** SKIN ***/
+.sf-menu {
+	float:			left;
+	margin-bottom:	1em;
+}
+.sf-menu a {
+	border:			1px solid white;
+	padding: 		.25em 0em;
+	width: 			160px;
+	text-decoration:none;
+	box-shadow:		7px 5px 1px rgba(35, 35, 35, .5);
+	font-family:	arial, sans-serif;
+}
+.sf-menu a, .sf-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
+	color:			inherit;
+}
+.sf-menu li {
+	margin:			2px;
+}
+.sf-menu li, .sf-menu li li, .sf-menu li li li {
+	color:			white;
+	
+	background-color: black;
+	background-image: linear-gradient(bottom, rgb(9,9,9) 15%, rgb(40,40,40) 94%);
+	background-image: -o-linear-gradient(bottom, rgb(9,9,9) 15%, rgb(40,40,40) 94%);
+	background-image: -moz-linear-gradient(bottom, rgb(9,9,9) 15%, rgb(40,40,40) 94%);
+	background-image: -webkit-linear-gradient(bottom, rgb(9,9,9) 15%, rgb(40,40,40) 94%);
+	background-image: -ms-linear-gradient(bottom, rgb(9,9,9) 15%, rgb(40,40,40) 94%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.15, rgb(9,9,9)),
+		color-stop(0.94, rgb(40,40,40))
+	);
+}
+.sf-menu li:hover, .sf-menu li.sfHover, .sf-menu li.current{
+}
+.sf-menu li.current a,
+.sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
+	color:			black;
+	outline:		0;
+	border:			1px solid black;
+	
+	background-color: white;
+	background-image: linear-gradient(bottom, rgb(206,206,206) 40%, rgb(251,251,251) 70%);
+	background-image: -o-linear-gradient(bottom, rgb(206,206,206) 40%, rgb(251,251,251) 70%);
+	background-image: -moz-linear-gradient(bottom, rgb(206,206,206) 40%, rgb(251,251,251) 70%);
+	background-image: -webkit-linear-gradient(bottom, rgb(206,206,206) 40%, rgb(251,251,251) 70%);
+	background-image: -ms-linear-gradient(bottom, rgb(206,206,206) 40%, rgb(251,251,251) 70%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.4, rgb(206,206,206)),
+		color-stop(0.7, rgb(251,251,251))
+	);
+}
+
+/*** shadows for all but IE6 ***/
+.sf-shadow ul {
+	background:	url('../js/superfish-1.4.8/images/shadow.png') no-repeat bottom right;
+	padding: 0 8px 9px 0;
+	-moz-border-radius-bottomleft: 17px;
+	-moz-border-radius-topright: 17px;
+	-webkit-border-top-right-radius: 17px;
+	-webkit-border-bottom-left-radius: 17px;
+}
+.sf-shadow ul.sf-shadow-off {
+	background: transparent;
+}

@@ -1,0 +1,28 @@
+@import url('base.css');
+
+.pika-stage {
+	margin: 0px auto 20px auto;
+	height: auto;
+	width: 930px;
+	max-width: 80%;
+	box-shadow: 7px 5px 1px rgba(35, 35, 35, .5);
+}
+.pika-stage img {
+	height: auto;
+	max-width: 100%;
+}
+
+/*.pika-imgnav a.previous {background: none;}
+.pika-imgnav a.next {background: none;}*/
+.pika-imgnav a.play {background: none;}
+.pika-imgnav a.pause {background: none;}
+
+.pika-counter{color:rgba(0,0,0,0);background:rgba(0,0,0,0)}
+.pika-stage .caption{color:rgba(0,0,0,0);background:rgba(0,0,0,0);border:none;}
+.pika-textnav {width: 96%;}
+
+
+.pika-thumbs li {
+	margin: 0px 0px 10px 17px;
+	box-shadow: 7px 5px 1px rgba(35, 35, 35, .5);
+}
